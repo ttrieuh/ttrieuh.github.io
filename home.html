@@ -20,13 +20,7 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
 
-TemplateMo 579 Cyborg Gaming
-
-https://templatemo.com/tm-579-cyborg-gaming
-
--->
   </head>
 
 <body>
@@ -444,7 +438,13 @@ https://templatemo.com/tm-579-cyborg-gaming
 
 
 <script>
+// Đoạn mã JavaScript nà tạo ra một vật thể mưa (snowflake) bằng cách tạo một đối tượng `img` với đường dẫn ảnh là `lixi.png` và cấu trúc CSS `snowflake` được thêm vào. Sau đó, một khoản không gian (`left`) cho snowflake được tính bằng giá trị ngẫu nhiên của chiều rộng màn hình.
 
+// Sau khi thêm snowflake vào trang web, chúng được di chuyển theo một animation dựa trên giá trị ngẫu nhiên của chiều rộng màn hình và chiều cao của màn hình. Animation có thời gian chạy ngẫu nhiên từ 2000ms đến 4000ms với không gian di chuyển của snowflake là giá trị ngẫu nhiên của chiều rộng màn hình.
+
+// Khi animation kết thúc, snowflake bị xóa khỏi trang web.
+
+// Chúng ta sẽ tạo một snowflake mới sau mỗi 1400ms bằng hàm `setInterval`.
 function createSnowflake() {
       const snowflake = document.createElement('img');
       snowflake.src = 'lixi.png';
@@ -467,6 +467,7 @@ function createSnowflake() {
     }
 
     setInterval(createSnowflake, 1400); // Tạo một vật thể mới sau mỗi 1400ms
+  
  var searchInput = document.getElementById("search-input");
 var suggestionList = document.getElementById("suggestion-list");
 
