@@ -467,8 +467,11 @@ function createSnowflake() {
     }
 
     setInterval(createSnowflake, 1400); // Tạo một vật thể mới sau mỗi 1400ms
-  
- var searchInput = document.getElementById("search-input");
+
+
+// Khi người dùng nhập vào trường nhập, nó lọc danh sách kết quả dựa trên giá trị đã nhập và hiển thị kết quả trong một phần khác được gọi là `suggestion-list`.
+// Khi người dùng chọn một kết quả, giá trị của kết quả đó được đặt vào trường nhập và danh sách kết quả bị ẩn.
+// Khi người dùng click vào bất kỳ vị trí ngoài trường nhập hoặc danh sách kết quả, danh sách kết quả bị ẩn. 
 var suggestionList = document.getElementById("suggestion-list");
 
 searchInput.addEventListener("input", function() {
