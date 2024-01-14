@@ -473,7 +473,7 @@ function createSnowflake() {
 // Khi người dùng chọn một kết quả, giá trị của kết quả đó được đặt vào trường nhập và danh sách kết quả bị ẩn.
 // Khi người dùng click vào bất kỳ vị trí ngoài trường nhập hoặc danh sách kết quả, danh sách kết quả bị ẩn. 
 var suggestionList = document.getElementById("suggestion-list");
-
+ var searchInput = document.getElementById("search-input");
 searchInput.addEventListener("input", function() {
   var query = this.value.toLowerCase();
   var suggestions = ["Độ Mixi", "Rambo", "FUNNY GAMING TV","Thầy Giáo Ba"];
